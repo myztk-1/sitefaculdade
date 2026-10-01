@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Projeto acadêmico de uma ONG para ações sociais e voluntariado.">
+<title>Conecta ONG</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+<a class="logo" href="#inicio" aria-label="Conecta ONG - início">Conecta ONG</a>
+<nav aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#acoes">Ações</a><a href="#contato">Contato</a></nav>
+</header>
+<main id="inicio">
+<section class="hero" aria-labelledby="titulo"><div><p class="tag">Tecnologia para gerar impacto social</p><h1 id="titulo">Conectando pessoas a causas que importam.</h1><p>Conheça nossas ações, participe como voluntário e ajude a transformar a comunidade.</p><a class="button" href="#acoes">Conhecer ações</a></div></section>
+<section id="sobre" class="section" aria-labelledby="sobre-titulo"><h2 id="sobre-titulo">Sobre o projeto</h2><p>Aplicação acadêmica para divulgar ações de uma ONG e aproximar voluntários de oportunidades de participação.</p></section>
+<section id="acoes" class="section" aria-labelledby="acoes-titulo"><h2 id="acoes-titulo">Nossas ações</h2><div class="cards">
+<article class="card"><h3>Arrecadação de alimentos</h3><p>Campanhas para arrecadar alimentos e apoiar famílias da comunidade.</p><button type="button" class="action-button" data-action="Arrecadação de alimentos">Quero participar</button></article>
+<article class="card"><h3>Doação de roupas</h3><p>Coleta e distribuição de roupas em bom estado para quem precisa.</p><button type="button" class="action-button" data-action="Doação de roupas">Quero participar</button></article>
+<article class="card"><h3>Voluntariado</h3><p>Encontre formas de contribuir com seu tempo e suas habilidades.</p><button type="button" class="action-button" data-action="Voluntariado">Quero participar</button></article>
+</div></section>
+<section id="contato" class="section" aria-labelledby="contato-titulo"><h2 id="contato-titulo">Entre em contato</h2>
+<form id="contactForm" novalidate><div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" required></div><div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" required></div><div class="field"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="5" required></textarea></div><button class="button" type="submit">Enviar mensagem</button><p id="formFeedback" class="feedback" role="status" aria-live="polite"></p></form></section>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite" aria-hidden="true"></div>
+<footer class="footer"><p> Projeto academico feito por Arthur Maia.</p></footer>
+<script src="js/script.js"></script>
+</body></html>
